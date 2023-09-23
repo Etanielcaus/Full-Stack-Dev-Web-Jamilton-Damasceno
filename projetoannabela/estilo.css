@@ -1,0 +1,28 @@
+body{
+	background: #d2d2c1 url('imagens/fundo.png');
+}
+
+.rodape{
+	text-align: center;
+	font-weight: bold;
+}
+
+p{
+	font-family: fantasy ;
+}
+img{
+	border: 8px solid yellow;
+}
+
+#cabecalho{
+	background: #c5c5b2;
+	padding: 18px;
+
+}
+
+a{
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bold;
+	
+}

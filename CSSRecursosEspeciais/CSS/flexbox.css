@@ -1,0 +1,53 @@
+/* Flexbox Itens */
+#conteudo1 {
+	background: #dcdcdc;
+	height: 600px;
+	display: flex;
+}
+
+.item {
+	/*width: 200px; */
+	height: 100px;
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+	flex-grow: 0; /* Define proporção de espaço ocupado um item */
+	flex-shrink: 1; /* Define a capacidade de redução de tamanho do item.*/
+	flex-basis: 150px; /* Indica o tamanho incial do flex item antes da distribuição do espaço restante.*/
+}
+
+/*.ordem1{ Muda a ordem dos itens
+	order: 1;
+}
+
+.ordem2{
+	order: 2;
+}
+
+.ordem3{
+	order: 3;
+}
+
+.ordem4{
+	order: 4;
+} */
+
+.item1 {
+	/*flex-grow: 1; */
+	/*flex-shrink: 1;
+}
+
+.item2 {
+	/*flex-grow: 2; */ 
+	/*flex-shrink: 2; */
+}
+
+.item3 {
+	/*flex-grow: 3; */ 
+	/*flex-shrink: 3; */
+}
+
+.item3 {
+	/*flex-grow: 4; */ 
+	/*flex-shrink: 4; */
+}

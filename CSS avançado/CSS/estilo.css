@@ -1,0 +1,197 @@
+/* Barra de navegação vertical*/
+
+/* Lista de atividades */
+
+.lista-atividades {
+  border: 1px solid red;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  float: right;
+}
+
+.item-lista-atividades {
+  padding: 5px 20px;
+  border: 1px solid red;
+  background: url(../imagens/seta.png) no-repeat left center;
+}
+
+/* Lista links */
+
+.lista-links {
+  margin: 0px;
+  padding: 20px 0px;
+  list-style-type: none;
+  float: center;
+}
+
+.lista-links ul, .lista-links a{
+  width: 200px;
+  height: 40px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  border: 1px solid red;
+  background: #f7b600 url(../imagens/menu.png) left bottom;
+}
+
+ul.lista-links a:hover, .selecionado a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+#lista {
+  display: block;
+}
+
+/* Marcar a página atual */
+
+#lista .Home a,
+#sobre .Sobre a {
+  background-position: right bottom;
+  background-color: #f99200;
+  color: #fff;
+}
+
+/* Barra de navegação horizontal */
+
+ul#horizontal{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 720px;
+  background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+  float: left;
+}
+
+
+ul#horizontal li{
+  float: left;
+  display: block;
+}
+
+ul#horizontal a {
+  display: block;
+  padding: 0 2em;
+  line-height: 2em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+
+ul#horizontal a:hover{
+  color: #085662;
+  background: #45cade;
+}
+
+#horizontal .Home a, {
+  color: #085662;
+  background: #45cade;
+}
+
+ul#navegacao-abas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 720px;
+}
+
+ul#navegacao-abas li {
+  float: left;
+  background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+ul#navegacao-abas li a {
+  display: block;
+  padding: 0 2em;
+  line-height: 3em;
+  text-decoration: none;
+  background: url(../imagens/aba-esquerda.png) no-repeat top left;
+  color: #fff;
+}
+
+ul#navegacao-abas a:hover {
+  color: #894a1f;
+}
+
+ul#navegacao-abas li#atual{
+  background: url(../imagens/aba-direita-atual.png) no-repeat;
+}
+
+ul#navegacao-abas li#atual a {
+  background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+
+/*Layouts examples */
+
+#layouts {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #f2f2f2;
+  width: 1024px;
+  margin: 0 auto;
+  min-width: 720px;
+  max-height: 1000px;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff url(../imagens/coluna.png) repeat-y left top;
+}
+
+#marca {
+  width: 100%;
+  height: 200px;
+  background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+  text-align: center;
+  line-height: 200px;
+}
+
+#conteudo {
+  width: 75%;
+  float: right;
+}
+
+#conteudo-principal {
+  width: 62%;
+  float: left;
+}
+
+img.img-noticia {
+  width: 90%;
+  padding: 2%;
+  max-width: 600px;
+}
+
+#conteudo-secundario {
+  width: 34%;
+  float: right;
+  background: #d1d1d1;
+  padding: 10px;
+}
+
+#navegacao {
+  width: 23%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navegacao ul {
+  list-style: none;
+}
+
+#navegacao li a {
+  text-decoration: none;
+}
+
+#rodape {
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}

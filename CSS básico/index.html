@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style type="text/css">
+
+
+			.azul {
+				color: blue;
+			}
+
+			#principal {
+				background-image: url('imagens/fundo.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center;
+				
+
+
+			}
+
+			#topo {
+				background: blue;
+			}
+
+			#conteudo {
+				background: red;
+			}
+
+			#rodape {
+				background: green;
+			}
+
+			#assinatura {
+				background: pink;
+			}
+
+			#bordas {
+				/*border: 3px solid red;*/
+				border-color: red green gray blue;
+				border-width: 15px 10px 8px 3px;
+				border-style: outset;
+			}
+
+			.produto {
+				color: gray;
+				margin: 10px;
+			}
+
+			.formatacao{
+				color: #CA0E00;
+				font-size: 30px;
+				background: #05CA04;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+
+			.texto{
+				/*
+				px -> tamanho fixo
+				% -> tamanho relativo
+				em -> tamanho relativo ao container pai
+				*/
+				font-size: 30px;
+			}
+
+			.formatacoes{
+				font-size: 40px;
+				font-family: "Times New Roman", Times, serif;
+				color: black;
+				font-weight: bold;
+				font-style: italic;
+				text-decoration: underline;
+
+			}
+
+			.fundo{ 
+				/*background-color: red;*/
+				background-image: url('imagens/fundoazul.jpg');
+				background-repeat: repeat;
+				color: green;
+			}
+
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<title>Aulas CSS</title>
+	</head>
+	<body id="principal">
+
+
+		<h1 style="color: green;">Inline Style</h1> <!-- Aplicar o Estilo na propria linha -->
+
+		<p style="color: red;">
+			Integer placerat sem eget ex hendrerit luctus. Nulla ut mollis diam. Praesent nec bibendum erat. Nulformatacoesla mollis lacinia erat. Sed magna metus, luctus vel dignissim et, blandit quis arcu. Maecenas commodo in leo in euismod. Donec non scelerisque nulla. Suspendisse ac dolor turpis.
+		</p>
+
+		<p style="color:gray;">formatacoes
+			Integer placerat sem eget ex hendrerit luctus. Nulla ut mollis diam. Praesent nec bibendum erat. Nulla mollis lacinia erat. Sed magna metus, luctus vel dignissim et, blandit quis arcu. Maecenas commodo in leo in euismod. Donec non scelerisque nulla. Suspendisse ac dolor turpis.
+		</p>
+
+
+		<hr>
+
+		<h1>Internal style sheet</h1> <!-- Dentro do cabeçalho do programa (<style type="text/css">
+			p{color: red;}  assim é a estrutura, TAG{comandos}
+		</style>) -->
+		<p>
+			Integer placerat sem eget ex hendrerit luctus. Nulla ut mollis diam. Praesent nec bibendum erat. Nulla mollis lacinia erat. Sed magna metus, luctus vel dignissim et, blandit quis arcu. Maecenas commodo in leo in euismod. Donec non scelerisque nulla. Suspendisse ac dolor turpis.
+		</p>
+
+		<hr>
+
+		<h1>Classes e ID</h1> <!-- ID: Identificador (#principal { conteudo}, id="principal"), Classe: classificação (.azul {conteudo}, class="azul") -->
+
+		<p class="azul">
+			Integer placerat sem eget ex hendrerit luctus. Nulla ut mollis diam. Praesent nec bibendum erat. Nulla mollis lacinia erat. Sed magna metus, luctus vel dignissim et, blandit quis arcu. Maecenas commodo in leo in euismod. Donec non scelerisque nulla. Suspendisse ac dolor turpis.
+		</p>
+
+		<p class="azul"> 
+			Integer placerat sem eget ex hendrerit luctus. Nulla ut mollis diam. Praesent nec bibendum erat. Nulla mollis lacinia erat. Sed magna metus, luctus vel dignissim et, blandit quis arcu. Maecenas commodo in leo in euismod. Donec non scelerisque nulla. Suspendisse ac dolor turpis.
+		</p>
+		
+		<hr>
+
+		<h1>Divs e Spams</h1>
+
+		<div id="topo">
+			
+			<img src="https://www.otempo.com.br/image/contentid/policy:1.2833486:1679348511/image.jpg?f=3x2&q=0.6&w=1200&$p$f$q$w=4633e5f" width="200">
+			<ul>
+				<li>Home</li>
+				<li>Produtos</li>
+				<li>Contaots</li>
+			</ul>
+
+		</div>
+
+		<div id="conteudo">
+			<div class="produto">
+				Produto 1
+			</div>
+			<div class="produto">
+				Produto 2
+			</div>
+			<div class="produto">
+				Produto 3
+			</div>
+		</div>
+
+		<div id="rodape">
+			
+			Todos os <span class="azul">direitos</span> reservados.
+
+		</div>
+
+		<span id="assinatura"> <!-- agrupa seus elementos linha a linha -->
+			Jamilton
+		</span>
+
+		<span>
+			Damasceno
+		</span>
+
+		<hr>
+
+		<h1>Bordas</h1>
+
+		<div id="bordas">
+			Bordas <br>
+			Bordas <br>
+			Bordas <br>
+		</div>
+
+		<hr>
+
+		<h1>Fontes e Cores</h1>
+
+			<p class="formatacao">Conteúdo</p>
+
+		<hr>
+
+		<h1>Tamanho de textos</h1>
+
+		<div>
+			<p class="texto">
+				Conteúdo 1
+			</p>
+			<p>
+				Conteúdo 2
+			</p>
+		</div>
+
+		<hr>
+
+		<div>Fontes</div>
+
+		<div>
+			<p class="formatacoes">
+				Conteúdo
+			</p>
+		</div>
+
+		<hr>
+
+		<h1>Cor e imagem de fundo</h1>
+		<div class="fundo">
+			<p style="color: red;">Ut pretium faucibus est, in tempus purus vulputate vel. Nullam molestie ante ac turpis imperdiet lobortis. Phasellus tincidunt in est non congue. Sed eleifend quam nibh, a feugiat lorem tristique eget. Aliquam cursus eget ex nec faucibus. Phasellus vehicula, nisl quis euismod accumsan, mauris metus dictum ligula, eu porttitor tellus neque et arcu. Phasellus euismod sapien velit, malesuada hendrerit dolor condimentum faucibus. Sed posuere sodales feugiat. Maecenas placerat, leo sed ultricies venenatis, quam urna semper risus, ut iaculis lorem mi eget dolor. Maecenas aliquet aliquam lorem et fringilla. Ut feugiat sollicitudin lorem, a semper diam viverra quis. Praesent vitae risus aliquet, iaculis nunc non, molestie quam. Suspendisse feugiat sed purus nec malesuada. Maecenas interdum nisl at rutrum posuere. Maecenas consequat nunc ac lobortis bibendum.
+			</p>
+		</div>
+
+		<hr>
+
+		<h1>CSS externo</h1>
+
+		<p>
+			Ut pretium faucibus est, in tempus purus vulputate vel. Nullam molestie ante ac turpis imperdiet lobortis. Phasellus tincidunt in est non congue. Sed eleifend quam nibh, a feugiat lorem tristique eget. Aliquam cursus eget ex nec faucibus. Phasellus vehicula, nisl quis euismod accumsan, mauris metus dictum ligula, eu porttitor tellus neque et arcu. Phasellus euismod sapien velit, malesuada hendrerit dolor condimentum faucibus. Sed posuere sodales feugiat. Maecenas placerat, leo sed ultricies venenatis, quam urna semper risus, ut iaculis lorem mi eget dolor. Maecenas aliquet aliquam lorem et fringilla. Ut feugiat sollicitudin lorem, a semper diam viverra quis. Praesent vitae risus aliquet, iaculis nunc non, molestie quam. Suspendisse feugiat sed purus nec malesuada. Maecenas interdum nisl at rutrum posuere. Maecenas consequat nunc ac lobortis bibendum.
+		</p>
+
+		<br>
+
+		<h1>Modelo de Caixa</h1>
+		<div id="caixa">
+			
+			Ut pretium faucibus est, in tempus purus vulputate vel. Nullam molestie ante ac turpis imperdiet lobortis. Phasellus tincidunt in est non congue. Sed eleifend quam nibh, a feugiat lorem tristique eget. Aliquam cursus eget ex nec faucibus. Phasellus vehicula, nisl quis euismod accumsan, mauris metus dictum ligula, eu porttitor tellus neque et arcu. Phasellus euismod sapien velit, malesuada hendrerit dolor condimentum faucibus.
+
+		</div>
+		<div id="caixa2">
+			
+			Ut pretium faucibus est, in tempus purus vulputate vel. Nullam molestie ante ac turpis imperdiet lobortis. Phasellus tincidunt in est non congue. Sed eleifend quam nibh, a feugiat lorem tristique eget. Aliquam cursus eget ex nec faucibus. Phasellus vehicula, nisl quis euismod accumsan, mauris metus dictum ligula, eu porttitor tellus neque et arcu. Phasellus euismod sapien velit, malesuada hendrerit dolor condimentum faucibus.
+
+		</div>
+
+		<br>
+
+		<h1>Elementos flutuantes</h1>
+		
+		<div id="principal1">
+			<div class="flutuar">
+				Conteúdo1
+			</div>
+			<div class="flutuar">
+				Conteúdo2
+			</div>
+			<div class="flutuar">
+				Conteúdo3
+			</div>
+			<div class="flutuar">
+				Conteúdo4
+			</div>
+			<p class="clear">
+			Ut pretium faucibus est, in tempus purus vulputate vel. Nullam molestie ante ac turpis imperdiet lobortis. Phasellus tincidunt in est non congue. Sed eleifend quam nibh, a feugiat lorem tristique eget. Aliquam cursus eget ex nec faucibus. Phasellus vehicula, nisl quis euismod accumsan, mauris metus dictum ligula, eu porttitor tellus neque et arcu. Phasellus euismod sapien velit, malesuada hendrerit dolor condimentum faucibus. Sed posuere sodales feugiat. Maecenas placerat, leo sed ultricies venenatis, quam urna semper risus, ut iaculis lorem mi eget dolor. Maecenas aliquet aliquam lorem et fringilla. Ut feugiat sollicitudin lorem, a semper diam viverra quis. Praesent vitae risus aliquet, iaculis nunc non, molestie quam. Suspendisse feugiat sed purus nec malesuada. Maecenas interdum nisl at rutrum posuere. Maecenas consequat nunc ac lobortis bibendum.
+		</p>
+			<div class="clear"></div>
+		</div>
+
+		<hr>
+
+		<h1>Elementos flutuantes na prática</h1>
+		<div id="pratica">
+			<div id="principalnoticia">
+
+				<div class="noticia">
+					<h2>Etiam euismod metus vitae risus lobortis. 1</h2>
+					<p>
+						Etiam euismod metus vitae risus lobortis, lacinia sollicitudin augue laoreet. Sed et condimentum sapien, interdum auctor nisi.
+					</p>
+					<a href="">Veja mais</a>
+				</div>
+				
+				<div class="noticia">
+					<h2>Etiam euismod metus vitae risus lobortis. 2</h2>
+					<p>
+						Etiam euismod metus vitae risus lobortis, lacinia sollicitudin augue laoreet. Sed et condimentum sapien, interdum auctor nisi.
+					</p>
+					<a href="">Veja mais</a>
+				</div>
+
+				<div class="noticia">
+					<h2>Etiam euismod metus vitae risus lobortis. 3</h2>
+					<p>
+						Etiam euismod metus vitae risus lobortis, lacinia sollicitudin augue laoreet. Sed et condimentum sapien, interdum auctor nisi.
+					</p>
+					<a href="">Veja mais</a>
+				</div>
+
+			</div> <!-- fim noticias -->
+			<div class="clear"></div>
+
+			<div> <!-- inicio da galeria -->
+
+				<div id="galeria">
+				<img src="imagens/imagem1.png">
+				<p>Resumo</p>
+				</div>
+
+				<div id="galeria">
+				<img src="imagens/imagem2.png">
+				<p>Resumo</p>
+				</div id="galeria">
+
+				<div id="galeria">
+				<img src="imagens/imagem3.png">
+				<p>Resumo</p>
+				</div>
+
+				<div id="galeria">
+				<img src="imagens/imagem4.png">
+				<p>Resumo</p>
+				</div>
+
+				<div id="galeria">
+				<img src="imagens/imagem5.png">
+				<p>Resumo</p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+			<hr>
+
+			<h1>Elementos InLine, Inline-Block, Block</h1>
+				<h2>Elemento Block</h2>
+					<p>Ele ocupa todo o espaço da tela, e fica um abaixo do outro.</p>	
+			<br>
+				<h2>Elemento inline</h2>
+					<p>Fica um a frente do outro, e a largura da caixa fica em relação ao outro</p>
+
+					<span class="inline">inline1</span>
+					<span class="inline">inline2</span>
+
+			<br>
+				<h2>Elmento inline-block</h2>
+					<p>A largura definida baseada em seu conteúdo.</p>
+
+					<h1 class="block">Bloco 1</h1>
+					<h1 class="block">Bloco 2</h1>
+	
+		</div>
+
+		<h1>Posicionamentos (static, relative, absolute e fixed)</h1>
+
+			<div id="container">
+				
+				<h2 class="h2">Posicionamentos</h2>
+				<p class="p">P1 Aqui é uma posição estática.</p>
+				<p class="relative">P2 Aqui é uma posição relativa.</p>
+				<p class="absolute">P3 Aqui é uma posição absoluta.</p>
+				<p class="fixed">P4 Aqui é uma posição fixa.</p>
+				<p class="p">P5 Etiam euismod metus vitae risus lobortis, lacinia sollicitudin augue laoreet. Sed et condimentum sapien, interdum auctor nisi.</p>
+
+			</div>
+
+			<hr>
+
+		<h1>Sobrepondo elementos</h1>
+
+			<div class="item1">
+				Conteúdo 1
+			</div>
+
+			<div class="item2">
+				Conteúdo 2
+			</div>
+
+			<div class="item3">
+				Conteúdo 3
+			</div>
+			<div class="clear"></div>
+
+			<hr>
+
+		<h1>Formatando Links........................................................................................</h1>
+
+			<div>
+				<a href="https://www.marxists.org/portugues/" class="Links">Marxists</a> |
+				<a href="https://www.tecmundo.com.br" class="Links">Tecmundo</a> |
+				<a href="https://www.megacurioso.com.br" class="Links">Mega curioso</a> |
+				<a href="https://www.youtube.com.br" class="Links">youtube</a>
+
+			</div>
+
+	</body>
+</html>

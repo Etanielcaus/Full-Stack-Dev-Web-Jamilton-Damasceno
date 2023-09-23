@@ -1,0 +1,30 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0]
+"ApplicationPath"="Z:\\home\\etaniel\\햞ea de Trabalho\\Dev Web\\PhotoshopPortable\\App\\PhotoshopCS6\\"
+"FreeBeforeSlopAdjust"=dword:00380000
+"FreeSpace"=dword:001e84cc
+"PluginPath"="Z:\\home\\etaniel\\햞ea de Trabalho\\Dev Web\\PhotoshopPortable\\App\\PhotoshopCS6\\Plug-Ins\\"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0\ApplicationPath]
+@="Z:\\home\\etaniel\\햞ea de Trabalho\\Dev Web\\PhotoshopPortable\\App\\PhotoshopCS6\\"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Photoshop\60.0\PluginPath]
+@="Z:\\home\\etaniel\\햞ea de Trabalho\\Dev Web\\PhotoshopPortable\\App\\PhotoshopCS6\\Plug-Ins\\"
+
+[HKEY_CURRENT_USER\Software\Adobe]
+
+[HKEY_CURRENT_USER\Software\Adobe\IAC]
+"UserID"="3653D5B37769E7E4258B20CEC5D54C"
+
+[HKEY_CURRENT_USER\Software\Adobe\Photoshop]
+
+[HKEY_CURRENT_USER\Software\Adobe\Photoshop\60.0]
+"AppWindowPosition"="[40,23,1230,691]"
+"MemoryUsage"=dword:0000003c
+"oldPaletteFontTypeKey CS6"=dword:00000000
+"uiLanguageKey CS6"="en_US"

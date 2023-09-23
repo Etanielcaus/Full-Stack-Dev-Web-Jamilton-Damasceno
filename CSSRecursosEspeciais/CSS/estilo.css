@@ -1,0 +1,264 @@
+html, body {
+  height: 100%;
+  width: 1024px;
+  background: url(../imagens/971.jpg) repeat-y center;
+  display: flex;
+  margin: 0 auto;
+}
+
+#Border {
+	background: red;
+}
+
+/* Border Radius e Box Sizing ****************************/
+#caixa {
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	box-sizing: border-box;
+	-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	position: absolute;
+	border: 1PX solid red;
+}
+
+#caixa2 {
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	float: right;
+}
+/* TRANSPARENTE E GRADIENTE ****************************/
+#caixatransparente {
+	width: 300px;
+	height: 300px;
+	background: url("../imagens/camera.png");
+	position: absolute;
+}
+
+#caixatransparente h1{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#caixagradiente {
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(80deg, red, green, yellow, green);
+	float: right;
+}
+
+#caixagradienteradial {
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(red, green);
+	position: relative;
+}
+/* SOMBRAS ****************************/
+#sombras {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 20px 20px 20px 10px black;
+}
+
+#sombras h2 {
+	color: white;
+	/*text-shadow: 20px 20px black;*/
+	text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* ANIMACOES ****************************/
+
+@keyframes animacao-animacoes {
+	from {
+		background: red;
+	}
+	to {
+		background: green;
+	}
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 300px;
+    right: 750px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 300px;
+    right: 700px;
+  }
+}
+
+#animacoes {
+	width: 300px;
+	height: 300px;
+	background: red;
+	animation-name: animacao-animacoes;
+	animation-duration: 5s;
+	position: absolute;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	clear: both;
+}
+
+#box2 {
+	width: 300px;
+	height: 300px;
+	background-color: red;
+    animation: spin 2s infinite linear;
+    animation-direction: alternate;
+    float: right;
+}
+
+/* TRANSICOES ****************************/
+
+#transicoes {
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#transicoes:hover {
+	width: 400px;
+	background: yellow;
+	transition: width 3s, background 3s;
+}
+
+/* NOVAS TAGS HTML ****************************/
+
+header { /* CRIA CABECALHO*/
+	border: 1px solid red;
+	background: #ccc;
+	padding: 10px;
+}
+
+nav { /* CRIA CONTEUDO*/
+	border: 1px solid green;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+footer { /* CRIA RODAPE*/
+	border: 1px solid orange;
+	background: #ccc;
+}
+
+article { /* CRIA POSTAGEM*/
+	background: gray;
+	padding: 5px;
+}
+
+section { /* CRIA SEÇÃO*/
+	border: 1px dotted #fff;
+}
+
+time { /* CRIA DATAS*/
+	color: red;
+}
+
+aside { /* CRIA PARTE SEPARADA DO TEXTO*/
+	border: 1px solid blue;
+	background: #ccc;
+}
+
+/* Flexbox*/
+
+#conteudo {
+	background: #dcdcdc;
+	height: 400px;
+	display: flex;
+
+	/* row| row-reverse | column | column-reverse*/
+	/* Aqui muda a ordem dos conteúdos */
+	flex-direction: row;
+
+	/* nowrap | wrap | wrap-reverse */
+	/* Conteúdos se ajustam a área */
+	flex-wrap: nowrap;
+
+	/*flex-start|flex-end|center|space-between|space-around*/
+	/* Faz as distribuições dos item em relação ao conteúdo */
+	justify-content: space-between;
+
+	/*stretch|center|flex-start|flex-end|baseline */
+	align-items: center;
+
+}
+
+.itemfff {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+}
+
+/* Flexbox Itens */
+#conteudo1 {
+	background: #dcdcdc;
+	height: 600px;
+	display: flex;
+}
+
+.item {
+	width: 200px;
+	height: 100px;
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+	flex-grow: 0; /* Define proporção de espaço ocupado um item */
+	flex-shrink: 1; /* Define a capacidade de redução de tamanho do item.*/
+	display: flex;
+}
+
+/*.ordem1{ Muda a ordem dos itens
+	order: 1;
+}
+
+.ordem2{
+	order: 2;
+}
+
+.ordem3{
+	order: 3;
+}
+
+.ordem4{
+	order: 4;
+} */
+
+.item1 {
+	/*flex-grow: 1; */
+	flex-shrink: 1;
+}
+
+.item2 {
+	/*flex-grow: 2; */ 
+	flex-shrink: 2;
+}
+
+.item3 {
+	flex-shrink: 3;
+}
+
+#paragrafoteste{
+	width: 250px;
+	margin: 10px;
+	background: white;
+	padding: 10px;
+	float: left;
+	flex: auto;
+	
+}

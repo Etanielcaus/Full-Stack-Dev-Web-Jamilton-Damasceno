@@ -1,0 +1,189 @@
+p{
+	color: red;
+	background: orange;
+}
+
+#caixa{
+	border: 1px solid red;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	/*padding: 20px 15px 10px 5px;*/ <!-- começa com top e vai em sentido horário -->
+
+	<!-- margin faz um espaçamento entre as caixas -->
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+
+	width: 150px;
+}
+
+#caixa2{
+	margin: 50px;
+	width: 150px;
+	border: 1px solid red;
+}
+
+/*Elementos flutuantes*/
+
+.flutuar{
+	background: blue;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: right;
+}
+
+/*.flutuar2{
+	background: red;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}*/
+
+.clear{
+	clear: both;
+}
+
+#principal1{
+	border: 1px solid red;
+	background: green;
+}
+
+
+/* Elementos flutuantes na prática*/
+
+#pratica{
+	width: 920px;
+	border: 1px solid red;
+
+}
+
+.noticia{
+	background: #e5e5e5;
+	padding: 5px;
+	width: 280px;
+	margin: 7px;
+	float: left;
+}
+
+#galeria{
+	background: white;
+	width: 265px;
+	padding: 5px;
+	float: left;
+	margin: 15px;
+}
+
+/*Inline-block*/
+
+.inline{
+	border: 1px solid red;
+}
+
+.block{
+	border: 1px solid red;
+}
+
+/* Posicionamentos */
+
+#container{
+	background: #FFF;
+	width: 900px;
+	border: 1px solid red;
+	margin: 10px auto;
+	padding: 10px;
+	position: relative;
+}
+
+.h2{
+	
+}
+
+.p{
+	width: 300px;
+}
+
+.relative{
+	border: 1px solid red;
+	position: relative;
+	/* top, right, bottom, left */
+	top: 20px;
+	left: 80px;
+	width: 300px;
+}
+
+.absolute{
+	position: absolute;
+	border: 1px solid red;
+	top: 80px;
+	right: 80px;
+	width: 300px;
+}
+
+.fixed{
+	position: fixed;
+	border: 1px solid red;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+	width: 300px;
+}
+
+/* Sobrepondo elementos */
+
+.item1{
+	border: 1px solid red;
+	background: orange;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	z-index: 1;
+}
+
+.item2{
+	border: 1px solid red;
+	background: green;
+	width: 200px;
+	height: 200px;
+	left: 80px;
+	position: relative;
+	z-index: 0;
+}
+
+.item3{
+	border: 1px solid red;
+	background: yellow;
+	width: 200px;
+	height: 200px;
+	left: 250px;
+	position: relative;
+	z-index: 2;
+}
+
+/* Formatando Links */
+
+.Links{
+	color: orange;
+}
+ 
+a:link {
+	color: blue;
+} /*Links não visitados */
+
+a:visited{
+	color: red;
+} /*Links visitados */
+
+a:hover{
+	color: green;
+} /*Links Hover, quando o cursor em cima do link */
+
+a:active{
+	color: yellow;
+} /*Links ativos, quando visitados */

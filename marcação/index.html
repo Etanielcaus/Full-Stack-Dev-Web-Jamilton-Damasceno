@@ -1,0 +1,151 @@
+<!DOCTYPE html><!-- doctype do HTML5 -->
+<html> <!-- Abertura do Html -->
+
+	<head> <!-- Abertura do Cabeçalho -->
+
+		<title> 
+			Pagina de marcação
+		</title>
+		<meta charset="utf-8"> <!-- se trata de um atributo -->
+		
+	</head>
+
+
+
+	<body> <!-- Corpo do site -->
+		
+		<h1>Este é um cabeçalho grande</h1>
+		<h2>Este é um cabeçalho um pouco menor</h2>
+		<h3>Este é um cabeçalho</h3>
+		<h4>Este é um cabeçalho</h4>
+		<h5>Este é um cabeçalho</h5>
+		<h6>Este é um cabeçalho</h6>
+
+	<hr>
+
+		<p>Este é um parágrafo</p>
+
+	<hr> <!-- Cria uma linha -->
+
+		Este texto está em <strong> Negrito </strong> <br>
+		Este texto está em <em>itálico</em>  <br>
+		Este texto está em <u>underline</u> <br>
+		Este texto está <strike>riscado </strike> <br>
+
+	<hr>
+
+		<h1>Listas</h1>
+
+		<h3>Lista não ordenada</h3>
+		<ul type="square"> <!-- lista não ordenada -- type muda as atritubuições (circle, square, disc) -->
+			<li>Item da lista</li>
+			<li>Item da Lista 2</li>
+		</ul>
+
+		<h3>Lista ordenada</h3>
+		<ol type="I"> <!-- Lista ordenada -- type muda as atritubuições ( 1, A, a, I, i)-->
+			<li>Item da lista</li>
+			<li>Item da lista 2</li>
+		</ol>
+
+	<hr>
+
+		<h1>Imagens</h1>
+		<img src="arquivos/imagens/franco.jpg" width="200"> <!-- aqui a imagem salva direto no arquivo -- widht se refere ao tamanho em pixels, da pra utilisar também height para a altura -->
+		<!-- <img src="https://cultura.uol.com.br/upload/tvcultura/esporte/20221215111259_screenshot-20221215-111138-instagram-1-1-.jpg"> Aqui puxa a imagem da internet-->
+
+	<hr>
+
+		<h1>Links</h1>
+
+		<a href="pag_sec.html">Aqui vai para a página secundária</a> <!-- possível colocar dentro de um texto -->
+
+	<hr>
+
+		<h1>Tabelas</h1>
+		<table border="4" width="400"> <!-- inicio da tabela \ border é o tamanho da borda \ widht é o próprio tamanho da tabela, possível utilizar também porcentagem (100%)-->
+
+			<tr> <!-- linha de tabela -->
+				<th>Produto</th> <!-- th é table header -->
+				<th>Preço</th>
+				<th>Referencia</th>
+			</tr>
+			<tr> <!-- linha da tabela -->
+				<td>item1</td> <!-- dados da tabela -->
+				<td>Item2</td> <!-- possível utilizar imagens dentro da tabela com img e links com <a> -->
+				<td>item3</td>
+			</tr>
+			<tr>
+				<td>Item4</td>
+				<td>Item5</td>
+				<td>Item6</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Desconto</td>
+				<td colspan="2">cupom1</td>
+			</tr>
+			<tr>
+				<td colspan="2">cupom2</td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td colspan="2">1980</td>
+			</tr>
+			
+		</table>
+
+
+	<hr>
+
+		<h1>Formulários</h1>
+
+		<h2>Login</h2>
+		<form action="processa.php"> <!-- abre formulario --> <!-- action é para enviar para outra página -->
+			
+			Login:<br>
+			<input type="text" name="login"> <!-- adiciona uma caixa de entrada de dados --> <br>
+
+			Senha:<br>
+			<input type="password" name="senha"> <br> <!-- caixa para senha -->
+
+			<input type="submit" value="logar"> <!-- caixa para enviar dados -->
+
+		</form>
+
+		<form>
+		<h2>Cadastro</h2>
+		Login:<br>
+		<input type="text" name="Login"><br><br>
+
+		Sexo: <br>
+		<input type="radio" name="sexo" value="M">Masculino <br> <!-- para selecionar opções -->
+		<input type="radio" name="sexo" value="F">Feminino <br> <br>
+
+		Interesses <br>
+		<input type="checkbox" name="Interesses"> Futebol <br>
+		<input type="checkbox" name="Interesses"> Cursos <br>
+		<input type="checkbox" name="Interesses"> Moda <br> <br>
+
+		Estado <br>
+		<select>
+			<option>Sp</option>
+			<option>Pr</option>
+			<option>Mg</option>
+		</select>
+
+		Observações: <br>
+		<textarea></textarea> <br><br>
+
+		<input type="submit" name="Cadastrar">
+
+		</form>
+
+	<hr>
+
+	<h1>Caracteres Especiais</h1>
+	&lt; &gt;
+
+	</body>
+	
+</title>
+</html>

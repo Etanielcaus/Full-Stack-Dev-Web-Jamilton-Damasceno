@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Economia</title>
+
+  <style>
+    /* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos específicos */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  transition: background-color 0.3s ease;
+}
+
+main {
+  flex: 1;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog de Economia</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Últimos Artigos</h2>
+      <article>
+        <h3>Título do Artigo 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium ultricies consequat.</p>
+        <a href="artigo1.html">Leia mais</a>
+      </article>
+      <article>
+        <h3>Título do Artigo 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium ultricies consequat.</p>
+        <a href="artigo2.html">Leia mais</a>
+      </article>
+    </section>
+
+    <section>
+      <h2>Categorias</h2>
+      <ul>
+        <li><a href="categoria1.html">Categoria 1</a></li>
+        <li><a href="categoria2.html">Categoria 2</a></li>
+        <li><a href="categoria3.html">Categoria 3</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Todos os direitos reservados. &copy; 2023 Blog de Economia</p>
+  </footer>
+</body>
+</html>
