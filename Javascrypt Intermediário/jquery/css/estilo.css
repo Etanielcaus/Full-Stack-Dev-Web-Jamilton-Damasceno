@@ -1,0 +1,16 @@
+.destaque {
+    background-color: red !important;
+}
+
+ul li {
+    background-color: gray;
+    color: blue;
+}
+
+#conteudo {
+    position: absolute;
+    border: 1px solid #9c6a00;
+    background-color: #ffae00;
+    padding: 30px;
+    width: 300px;
+}

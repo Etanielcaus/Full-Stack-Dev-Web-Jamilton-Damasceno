@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery - Selecionando Elementos</title>
+
+        
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+
+    </head>
+    <body>
+        <h1>Selecionando elementos</h1>
+
+        <ul id="lista" quantidade="6">
+            <li>Jamilton</li>
+            <li>Ana</li>
+            <li>Pedro</li>
+            <li>João</li>
+            <li>Maria</li>
+            <li>Joana</li>
+        </ul>
+        <hr>
+
+        <div id="conteudo"> 
+            <span>Conteudo</span>
+        </div>
+
+        <button acao-clique>Clique Aqui</button>
+
+        <script>
+            $('[acao-clique]').click(function () { 
+               //const res = $('#conteudo').html(); //NOTE - html recupera o que tiver dentro do id, sendo possível também colocar códigos html atraves dele
+               //console.log(res);
+
+               //$('#conteudo').text("Jamilton"); //NOTE - recupera somente o texto.
+               
+               //$('ul').html('<li>alterado</li>');
+
+               //$('ul li').html(function () {
+                //let item = $(this).text()
+                // return `<strong> ${item} </strong>`
+               //});
+
+               //SECTION - Obtendo e configurando atributos
+               //let quantidade = $('ul').attr('quantidade') //NOTE - Capturar atributo
+               //console.log('quantidade');
+
+               //!SECTION Adicionar e remover atributos
+               //$('ul').attr('tempo', '10') //NOTE - Adicionar atributo
+               //$('ul').removeAttr('quantidade'); //NOTE - Remove o atributo
+
+               //!SECTION Adicionando e removendo classes
+               //$('ul').addClass('destaque'); //NOTE - add class
+               //$('ul').removeClass('destaque'); //NOTE - remove class
+
+               //SECTION - Recuperando e alterando proriedades de classes
+                //let propriedade = $('ul li').css('color');
+                //console.log(propriedade);
+
+                //$('h1').css('color', 'red'); //NOTE - Aqui ele adiciona o atributo
+                //$('ul li').css({
+                //    'color':'red',
+                //    'font-size': '20px'
+                //});
+
+                
+            });
+        </script>
+        
+    </body>
+</html>

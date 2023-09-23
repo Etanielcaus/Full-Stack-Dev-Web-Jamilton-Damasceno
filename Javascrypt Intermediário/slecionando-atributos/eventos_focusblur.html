@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos Focus e Blur</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Javascript</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DOM - JS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="selecionando_classes.html">Selecionando Classes</a>
+                            <a class="dropdown-item" href="selecionando_atributos.html">Selecionando Atributos</a>
+                            <a class="dropdown-item" href="atributos_personalizados.html"> Atributos Personalizados</a>
+                            <a class="dropdown-item" href="adicionando_elementos.html"> Adc e Rmv 
+                                Elementos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventosJS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos - JS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="Eventos.html">Eventos</a>
+                            <a class="dropdown-item" href="eventos_abordagens.html">Abordagens</a>
+                            <a class="dropdown-item" href="eventos_interface.html">Interface do Usuário</a>
+                            <a class="dropdown-item" href="eventos_teclado.html">Teclado</a>
+                            <a class="dropdown-item" href="eventos_mouse.html">Mouse</a>
+                            <a class="dropdown-item" href="eventos_focusblur.html">Focus e Blur</a>
+                            <a class="dropdown-item" href="eventos_formularios.html">Formulários</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="container">
+            <h1 class="display-3 bg-success">Eventos: Focus e Blur</h1>
+            <p>Os eventos <em>focus</em> e <em>blur</em> são eventos de interação do usuário em JavaScript que são acionados quando um elemento HTML recebe ou perde o foco, respectivamente.</p>
+
+            <p>O evento <em>focus</em> é acionado quando um elemento HTML é selecionado ou recebe o foco de entrada, geralmente por meio do mouse ou teclado. Isso pode acontecer, por exemplo, quando um usuário clica em um campo de entrada de texto.</p>
+
+            <p>Aqui está um exemplo simples de como usar o evento <em>focus</em> em JavaScript:</p>
+
+            <pre><code class="language-javascript">const inputElement = document.querySelector('input');
+
+            inputElement.addEventListener('focus', function() {
+            console.log('O campo de entrada recebeu o foco!');
+            });
+            </code></pre>
+
+            <p>No exemplo acima, estamos selecionando o primeiro elemento <code>&lt;input&gt;</code> encontrado no documento HTML usando <code>document.querySelector</code>. Em seguida, adicionamos um ouvinte de eventos para o evento <em>focus</em> usando o método <code>addEventListener</code>. Quando o elemento recebe o foco, a função de retorno de chamada será executada e exibirá a mensagem no console.</p>
+
+            <p>Por outro lado, o evento <em>blur</em> é acionado quando um elemento HTML perde o foco, geralmente quando o usuário clica fora do elemento ou pressiona a tecla "Tab" para navegar para o próximo elemento.</p>
+
+            <p>Aqui está um exemplo simples de como usar o evento <em>blur</em> em JavaScript:</p>
+
+            <pre><code class="language-javascript">const inputElement = document.querySelector('input');
+
+            inputElement.addEventListener('blur', function() {
+            console.log('O campo de entrada perdeu o foco!');
+            });
+            </code></pre>
+
+            <p>No exemplo acima, o código é semelhante ao exemplo anterior, mas usamos o evento <em>blur</em> em vez do evento <em>focus</em>. Quando o campo de entrada perde o foco, a mensagem será exibida no console.</p>
+
+            <p>Esses eventos <em>focus</em> e <em>blur</em> são úteis para realizar ações ou validações quando um elemento HTML ganha ou perde o foco, permitindo que você crie uma experiência interativa e responsiva para seus usuários.</p>
+
+            <input type="text" id="entrada" placeholder="Nome">
+
+            
+
+            </div>
+        <script src="js/focus.js"></script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

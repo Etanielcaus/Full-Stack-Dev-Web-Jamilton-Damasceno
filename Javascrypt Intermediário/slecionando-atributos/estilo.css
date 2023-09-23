@@ -1,0 +1,31 @@
+#SelAtributos {
+    border: 1px solid red !important;
+    margin: 0 auto !important;
+}
+
+body {
+    margin: 0 auto; 
+}
+
+#container {
+    font-size: 15px;
+}
+
+.vermelho {
+    background-color: red;
+}   
+
+.laranja {
+    background-color: orange;
+}
+
+.texto {
+    color: black !important;
+}
+
+.container-fluid-extendido {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }

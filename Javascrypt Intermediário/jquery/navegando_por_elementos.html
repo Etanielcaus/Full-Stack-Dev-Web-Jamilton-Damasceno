@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery - Selecionando Elementos</title>
+
+        
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+
+    </head>
+    <body>
+        <h1>Selecionando elementos</h1>
+
+        <ul id="lista" quantidade="6">
+            <li>Jamilton</li>
+            <li>Ana</li>
+            <li>Pedro</li>
+            <li>João</li>
+            <li irmao>Maria</li>
+            <li>Joana</li>
+        </ul>
+        <hr>
+
+        <div id="conteudo"> 
+            <span>Conteudo</span>
+        </div>
+
+        <button acao-clique>Clique Aqui</button>
+
+        <script>
+            $('[acao-clique]').click(function () { 
+              
+                //$('span').addClass('destaque');
+                //$('span').parent().addClass('destaque');//NOTE - Aqui ele aciona o pai
+                //$('li:first').parents().addClass('destaque'); //NOTE - Aqui ele aciona todos os pais
+                //$('li:first').next().addClass('destaque'); //NOTE - aciona o proximo
+                //$('li:last').prev().addClass('destaque'); //NOTE - Aqui ele aciona o anterior
+                
+                //$('li:first').nextAll().addClass('destaque');
+                //$('li:first').prevAll().addClass('destaque');
+                //$('[irmao]').siblings().addClass('destaque'); //NOTE - Aciona todos os irmãos
+
+                //$('ul').children().addClass('destaque'); //NOTE - aciona o filho
+                //$('#conteudo').children().addClass('destaque');
+                //$('body').find('strong').addClass('destaque'); //NOTE - Ele vai procurar todas as class strong no body e aplicar a class destaque 
+
+                let elementoDom = document.getElementById('conteudo');
+                //elementoDom.addClass('destaque'); //NOTE - Assim ele não funciona, addClass é somente para objetos jquery
+                //$(elementoDom).addClass('destaque'); //NOTE -assim funciona, addClass é somente para objetos jquery
+
+                $('li').each(function (index, element) {
+                    $(elemento).addClass('destaque');
+                });
+
+
+                
+                
+            });
+        </script>
+        
+    </body>
+</html>

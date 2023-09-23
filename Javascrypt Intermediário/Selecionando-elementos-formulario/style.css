@@ -1,0 +1,8 @@
+.butt {
+    width: 250px;
+    height: 100px;
+    color: blue;
+    float: right;
+    float: inline-end;
+    margin-right: 300px;
+}

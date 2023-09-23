@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery - Selecionando Elementos</title>
+
+        
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+
+    </head>
+        <body>
+            
+            <h1>Animações</h1>
+            <p id="sumiu" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum mollitia alias obcaecati, hic accusamus quos eligendi vel soluta officiis beatae nesciunt sapiente, amet dolores pariatur optio reprehenderit, ex ullam. Repudiandae magnam molestiae recusandae sed deserunt provident iusto quam quos libero eligendi error eveniet in placeat atque, natus ab ipsa impedit!</p>
+
+            <img id="animacao" src="img/celular.png" height="200">
+
+            <button acao-clique>Executar</button>
+
+
+
+        <script>
+            $(function(){
+
+                $('[acao-clique]').on('click', function () {
+                    let duracao = 5000;
+                   /* $('#animacao').hide(duracao, function () {
+                        alert('Animacao finalizou');
+                    }); */
+
+                   /* $('#sumiu').show(duracao, function () {
+                        alert('paragrafo apareceu');
+                    });*/
+
+                   /*  $('#sumiu').toggle(duracao, function () {
+                        alert('paragrafo apareceu');
+                    });*/
+
+                    /*$('#sumiu').fadeIn(duracao, function () {
+                        alert('paragrafo apareceu'); //NOTE - Aqui ele aparece
+                    });*/
+
+                    /*$('#animacao').fadeOut(duracao, function () {
+                        alert('paragrafo apareceu'); //NOTE - Aqui ele desaparece
+                    });*/
+
+                    /*$('#sumiu').fadeTo(duracao, 0.5, function () {
+                        alert('paragrafo apareceu'); //NOTE - Duracao, opacidade
+                    });*/
+
+                   /* $('#sumiu').fadeToggle(duracao, 0.5, function () {
+                        alert('paragrafo apareceu'); //NOTE - Duracao, opacidade
+                    });*/
+
+                    //NOTE - SlideUp, SlideDown, slideToggle
+                    $('#animacao').slideDown(duracao, function () {
+                        alert('paragrafo apareceu'); 
+                    });
+
+                });
+
+            })
+        </script>
+        </body>
+</html>

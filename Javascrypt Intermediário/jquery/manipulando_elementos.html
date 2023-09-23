@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery - Selecionando Elementos</title>
+
+        
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+
+    </head>
+    <body>
+        <h1>Selecionando elementos</h1>
+
+        <ul id="lista" quantidade="6">
+            <li>Jamilton</li>
+            <li>Ana</li>
+            <li>Pedro</li>
+            <li>João</li>
+            <li irmao>Maria</li>
+            <li>Joana</li>
+        </ul>
+        <hr>
+
+        <div id="conteudo"> 
+            <span>Conteudo</span>
+        </div>
+
+        <div id="conteudo2"> 
+            <span>Conteudo2</span>
+        </div>
+        <button acao-clique>Clique Aqui</button>
+
+        <script>
+            $('[acao-clique]').click(function () { 
+              
+               //!SECTION Inserindos elementos
+               //ANCHOR - before->antes after->depois
+
+               //$('#conteudo').after('<strong>Jamilton</strong>'); //NOTE - Adiciona depois do elemento
+               //$('<strong>Jamilton</strong>').insertAfter('#conteudo');               
+
+               //$('#conteudo').before('<strong>Jamilton</strong>'); //NOTE - Adiciona depois do elemento
+               //$('<strong>Jamilton</strong>').insertBefore('#conteudo');
+
+               //!SECTION append->acrescentar prepend->prefixar
+               //$('#conteudo').append('[depois]'); //NOTE - acrescentar
+               //$('#conteudo').prepend('[Antes]'); //NOTE prefixar
+
+               //!SECTION remove->remover
+               //$('h1').remove();
+               //const retorno = $('h1').detach(); 
+               //$('#conteudo').before(retorno); //NOTE ele vai remover o item de um elemento e colocar em outro com esse código
+
+               //const retorno = $('h1').clone();
+               //$('#conteudo').before(retorno); //NOTE - Aqui ele vai clonar
+
+               //!SECTION Criando e envolvemendo elementos
+               //let item = $('<li><li>').append('Novo') //NOTE - Se não colocar tag de fechamento, ele cria dois programas
+               //$('ul').append(item);
+
+                //$('#conteudo').wrap("<div></div>"); //NOTE - Aqui ele criou uma div entre #conteudo
+
+                //$('p').wrapAll("<div></div>"); //NOTE - Envolver todos os elementos dentro de uma div
+                //$('span').unwrap() //NOTE - Exclui o que está envolvendo 
+                //$('p').empty(); //NOTE - Ele remove o conteúdo que está dentro dele
+
+                //$('#conteudo').replaceWith('<span>Jamilton</span>'); //NOTE - ele substitui
+            });
+        </script>
+        
+    </body>
+</html>

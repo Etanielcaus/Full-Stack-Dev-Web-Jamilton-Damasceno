@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selecionando Atributos</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Javascript</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DOM - JS</a>
+                        <div class="dropdown-menu" aria-labelledby="domJS">
+                            <a class="dropdown-item" href="selecionando_classes.html">Selecionando Classes</a>
+                            <a class="dropdown-item" href="selecionando_atributos.html">Selecionando Atributos</a>
+                            <a class="dropdown-item" href="atributos_personalizados.html"> Atributos Personalizados</a>
+                            <a class="dropdown-item" href="adicionando_elementos.html"> Adc e Rmv Elementos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventosJS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos - JS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="Eventos.html">Eventos</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="container" class="container-fluid-extendido">
+            <h1 class="display-3 bg-success w-100">Adicionando e removendo elementos</h1>
+            <h2>Adicionar e remover elementos no DOM usando JavaScript</h2>
+
+                <p>Ao desenvolver aplicativos web interativos, é comum a necessidade de adicionar e remover elementos no DOM (Document Object Model) usando JavaScript. O DOM é a representação da estrutura HTML de uma página como uma árvore de objetos, permitindo a manipulação e interação desses elementos através do JavaScript.</p>
+
+                <p>Para adicionar um novo elemento ao DOM, podemos utilizar o método <code>createElement</code> para criar o elemento desejado e, em seguida, o método <code>appendChild</code> para adicioná-lo como um filho de um elemento pai existente. Vejamos um exemplo de como adicionar um novo parágrafo a um elemento div com o ID "container":</p>
+
+                <pre><code>// Cria um novo elemento &lt;p&gt;
+                var novoParagrafo = document.createElement("p");
+
+                // Adiciona um conteúdo ao parágrafo
+                novoParagrafo.textContent = "Este é um novo parágrafo.";
+
+                // Obtém o elemento pai
+                var container = document.getElementById("container");
+
+                // Adiciona o parágrafo ao elemento pai
+                container.appendChild(novoParagrafo);
+                </code></pre>
+
+                <p>Dessa forma, será criado um novo parágrafo com o conteúdo especificado e ele será adicionado como um filho do elemento "container".</p>
+
+                <p>Para remover um elemento do DOM, podemos utilizar o método <code>removeChild</code>. Primeiramente, precisamos obter uma referência ao elemento que desejamos remover e, em seguida, chamar o método <code>removeChild</code> no elemento pai. Acompanhe o exemplo a seguir para entender melhor como remover o parágrafo que adicionamos anteriormente:</p>
+
+                <pre><code>// Obtém uma referência ao parágrafo
+                var paragrafoRemovido = document.getElementById("container").getElementsByTagName("p")[0];
+
+                // Obtém o elemento pai
+                var container = document.getElementById("container");
+
+                // Remove o parágrafo do elemento pai
+                container.removeChild(paragrafoRemovido);
+                </code></pre>
+
+                <p>Essa sequência de comandos removerá o parágrafo do elemento pai, resultando na remoção do parágrafo do DOM.</p>
+
+                <p>Ao adicionar e remover elementos no DOM usando JavaScript, é importante garantir que tenhamos referências corretas aos elementos relevantes e ao elemento pai adequado para evitar erros. Além disso, é necessário considerar o desempenho ao realizar manipulações extensas no DOM, pois essas operações podem ser computacionalmente intensivas.</p>
+                </div>
+                <h2 class="display-4">Exemplo prático da aula</h2>
+                <div id="conteudo">conteudo</div>
+
+                <ul id="itens">
+                    <li>Pedro</li>
+                    <li>Ana</li>
+                </ul>
+
+                <button name="adicionar">adicionar</button>
+                <button name="remover">remover</button>
+
+                <hr>
+
+                <p id="item-clonar">Tamires</p>
+                                
+
+        <script>
+            //TODO - Selecionando e removendo elementos.
+            const obj = document.getElementById('conteudo');
+            //obj.textContent = "Jamilton" //NOTE - Ele substitui o elemento
+            //obj.innerHTML = "<p style='color:red'>Jamilton</p>" //NOTE -Ele praticamente faz a mesma coisa, porém, com ele é possivel de utilizar outros elementos html e não só texto
+
+            const minhaLista = document.getElementById('itens');
+            const itemLista = document.createElement('li'); //NOTE - Aqui a ideia é criar um filho para ele, porém, vale ressaltar que aqui ainda é a criação de uma variavel com o método createElement
+            //itemLista.setAttribute('teste', 10)
+            //itemLista.textContent = "Maria" //NOTE - Aqui ele adiciona um elemento texto 
+            const texto = document.createTextNode('Jamilton') //NOTE - mesma coisa que um text content
+            
+            //itemLista.appendChild(texto) //NOTE - Um nó filho.
+
+            //minhaLista.appendChild(itemLista) //NOTE - Aqui ele basicamente adiciona a variavel
+
+
+            
+            //TODO - Adicionar o elmento e remover aoertando botão
+            const meuBotaoAdicionar = document.getElementsByName('adicionar');
+            const meuBotaoRemover = document.getElementsByName('remover');
+            
+            meuBotaoAdicionar[0].addEventListener('click', () => {
+               /* itemLista.appendChild(texto)
+                minhaLista.appendChild(itemLista)*/
+                itemLista.appendChild(texto)
+                minhaLista.insertBefore(itemLista, minhaLista.children[0]) //NOTE - Aqui ele controla aonde vai ser feito a exibição
+
+                const itemClonar = document.getElementById('item-clonar');
+                const item = itemClonar.cloneNode(true); //NOTE - Aqui ele vai criar o clone do item
+                minhaLista.appendChild(item)
+            })
+
+            meuBotaoRemover[0].addEventListener('click', () => {
+                minhaLista.removeChild(itemLista) 
+            })
+            
+            
+            
+            
+        </script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
